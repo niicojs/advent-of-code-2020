@@ -14,9 +14,10 @@ const lines = getDataLines();
 for (const line of lines) {
   const [rules, password] = line.split(': ');
   const [minmax, c] = rules.split(' ');
-  const [min, max] = minmax.split('-').map((n) => +n);
-  const cnt = count(password, c);
-  if (cnt >= min && cnt <= max) answer++;
+  const [one, two] = minmax.split('-').map((n) => +n);
+  const check1 = password[one - 1] === c;
+  const check2 = password[two - 1] === c;
+  if (check1 ^ check2) answer++;
 }
 
 consola.success('result', answer);
