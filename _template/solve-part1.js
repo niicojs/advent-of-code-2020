@@ -15,6 +15,8 @@ import {
 consola.wrapAll();
 
 const day = getCurrentDay();
+const isReal = process.argv[2] === 'real';
+
 consola.start('Starting day ' + day);
 const t = timer();
 
@@ -25,6 +27,7 @@ const [one, two] = getRawData()
 const lines = getDataLines();
 const grid = getGrid(getDataLines());
 const values = getDataLines().map(nums);
+const numbers = getDataLines().map((l) => +l);
 
 const key = (x, y, x2, y2) => {
   if (x2 && y2) return `${x},${y},${x2},${y2}`;
