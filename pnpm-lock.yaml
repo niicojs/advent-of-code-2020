@@ -12,8 +12,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       consola:
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.4.0
+        version: 3.4.0
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -21,11 +21,11 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       remeda:
-        specifier: ^2.19.0
-        version: 2.19.0
+        specifier: ^2.20.0
+        version: 2.20.0
       terminal-kit:
-        specifier: ^3.1.1
-        version: 3.1.1
+        specifier: ^3.1.2
+        version: 3.1.2
       tinyqueue:
         specifier: ^3.0.0
         version: 3.0.0
@@ -48,8 +48,8 @@ packages:
     resolution: {integrity: sha512-5mOlNS0mhX0707P2I0aZ2V/cmHUEO/fL7VFLqszkhUsxt7RwnmrInf/eEQKlf5GzvYeHIjT+Ov1HRfNmymlG0w==}
     engines: {node: '>=18'}
 
-  consola@3.3.3:
-    resolution: {integrity: sha512-Qil5KwghMzlqd51UXM0b6fyaGHtOC22scxrwrz4A2882LyUMwQjnvaedN1HAeXzphspQ6CpHkzMAWxBTUruDLg==}
+  consola@3.4.0:
+    resolution: {integrity: sha512-EiPU8G6dQG0GFHNR8ljnZFki/8a+cQwEQ+7wpxdChl02Q8HXlwEZWD5lqAF8vC2sEC3Tehr8hy7vErz88LHyUA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   cross-spawn@7.0.6:
@@ -161,8 +161,8 @@ packages:
     resolution: {integrity: sha512-TRzzuFRRmEoSW/p1KVAmiOgPco2Irlah+bGFCeNfJXxxYGwSw7YwAOAcd7X28K/m5bjBWKsC29KyoMfHbypayg==}
     engines: {node: '>=12.13.0'}
 
-  remeda@2.19.0:
-    resolution: {integrity: sha512-B/2+zHNPXu0BAopJU8ZrqMjA0u56M/l6BUxDq8AcU+3LWlOYVuf98I6qpYrB5BeeEICunpmXPcQl2ReGXkiQyw==}
+  remeda@2.20.0:
+    resolution: {integrity: sha512-T1qiOhoyzT0RToEbZn+saIkBvOxyFJrd4/Fr5PeR6x53PuGNq88mDAipmYhrsxbI+CmJGFVl/X+hoCkV6J8q/A==}
 
   setimmediate@1.0.5:
     resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
@@ -183,8 +183,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  string-kit@0.18.3:
-    resolution: {integrity: sha512-G8cBS7wxxHhwQrKU0Y8SjZJRtCzZ61bMmMCO1bWm6N6y2obT0koGK8uWYloMOaVPPr8zk7Ic995uEd4Jw504AQ==}
+  string-kit@0.19.1:
+    resolution: {integrity: sha512-zZ25k0yunLbq15mqeD29pmlnEZXTf470kqqqe/TstLsS0VGqPooCMCVAbUHRCEgRGtVM7K0tbXqR5JJKl9wf6g==}
     engines: {node: '>=14.15.0'}
 
   strip-final-newline@3.0.0:
@@ -195,8 +195,8 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
-  terminal-kit@3.1.1:
-    resolution: {integrity: sha512-R+R47zBQ14Ax2NZCLeuVl2GwonDwQN4iAsjQZICW8gMzaV+VIJMvL4qhUQtzDOhENADyNPQvY1Vz5G0bHHkLEA==}
+  terminal-kit@3.1.2:
+    resolution: {integrity: sha512-ro2FyU4A+NwA74DLTYTnoCFYuFpgV1aM07IS6MPrJeajoI2hwF44EdUqjoTmKEl6srYDWtbVkc/b1C16iUnxFQ==}
     engines: {node: '>=16.13.0'}
 
   tinyqueue@3.0.0:
@@ -209,8 +209,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  type-fest@4.31.0:
-    resolution: {integrity: sha512-yCxltHW07Nkhv/1F6wWBr8kz+5BGMfP+RbRSYFnegVb0qV/UMT0G0ElBloPVerqn4M2ZV80Ir1FtCcYv1cT6vQ==}
+  type-fest@4.33.0:
+    resolution: {integrity: sha512-s6zVrxuyKbbAsSAD5ZPTB77q4YIdRctkTbJ2/Dqlinwz+8ooH2gd+YA7VA6Pa93KML9GockVvoxjZ2vHP+mu8g==}
     engines: {node: '>=16'}
 
   uniq@1.0.1:
@@ -248,7 +248,7 @@ snapshots:
       is-wsl: 3.1.0
       is64bit: 2.0.0
 
-  consola@3.3.3: {}
+  consola@3.4.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -340,9 +340,9 @@ snapshots:
 
   pngjs@6.0.0: {}
 
-  remeda@2.19.0:
+  remeda@2.20.0:
     dependencies:
-      type-fest: 4.31.0
+      type-fest: 4.33.0
 
   setimmediate@1.0.5: {}
 
@@ -358,13 +358,13 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  string-kit@0.18.3: {}
+  string-kit@0.19.1: {}
 
   strip-final-newline@3.0.0: {}
 
   system-architecture@0.1.0: {}
 
-  terminal-kit@3.1.1:
+  terminal-kit@3.1.2:
     dependencies:
       '@cronvel/get-pixels': 3.4.1
       chroma-js: 2.6.0
@@ -372,7 +372,7 @@ snapshots:
       ndarray: 1.0.19
       nextgen-events: 1.5.3
       seventh: 0.9.2
-      string-kit: 0.18.3
+      string-kit: 0.19.1
       tree-kit: 0.8.7
 
   tinyqueue@3.0.0: {}
@@ -381,7 +381,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  type-fest@4.31.0: {}
+  type-fest@4.33.0: {}
 
   uniq@1.0.1: {}
 
