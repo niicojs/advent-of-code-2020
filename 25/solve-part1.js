@@ -1,22 +1,10 @@
 import { consola } from 'consola';
 import clipboard from 'clipboardy';
-import TinyQueue from 'tinyqueue';
-import {
-  getCurrentDay,
-  getDataLines,
-  getDirectNeighbors,
-  getGrid,
-  getRawData,
-  inGridRange,
-  mod,
-  nums,
-  timer,
-} from '../utils.js';
+import { getCurrentDay, getDataLines, mod, timer } from '../utils.js';
 
 consola.wrapAll();
 
 const day = getCurrentDay();
-const isReal = process.argv[2] === 'real';
 
 consola.start('Starting day ' + day);
 const t = timer();
@@ -27,20 +15,33 @@ function loop(x, subject) {
   return mod(x * subject, 20201227);
 }
 
-let size = 1;
-let [cardsize, doorsize] = [0, 0];
-let x = 1;
-let subject = 7;
-while (cardsize === 0 || doorsize === 0) {
-  x = loop(x, subject);
-  if (x === cardkey) cardsize = size;
-  if (x === doorkey) doorsize = size;
-  size++;
+function getLoopSizes() {
+  let size = 1;
+  let [cardsize, doorsize] = [0, 0];
+  let x = 1;
+  let subject = 7;
+  while (cardsize === 0 || doorsize === 0) {
+    x = loop(x, subject);
+    if (x === cardkey) cardsize = size;
+    if (x === doorkey) doorsize = size;
+    size++;
+  }
+
+  return [cardsize, doorsize];
 }
 
-consola.log(cardsize, doorsize)
+const [cardsize, doorsize] = getLoopSizes();
+// consola.log({ cardsize, doorsize });
 
-let answer = 0;
+function transform(subject, size) {
+  let val = 1;
+  for (let i = 0; i < size; i++) {
+    val = loop(val, subject);
+  }
+  return val;
+}
+
+const answer = transform(doorkey, cardsize);
 
 consola.success('result', answer);
 consola.success('Done in', t.format());
